@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
 	public Rigidbody2D rb;
+	public Animator animator;
 
 	public float jumpHeight = 5f;
 	private bool isGround = true;
@@ -14,6 +15,7 @@ public class PlayerControl : MonoBehaviour
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
 	}
 
 	void Update()
@@ -35,6 +37,15 @@ public class PlayerControl : MonoBehaviour
 		{
 			Jump();
 			isGround = false;
+		}
+
+		if (Mathf.Abs(movement) > 0.1f)
+		{
+			animator.SetFloat("Moving", 1f);
+		}
+		else if (movement < 0.1f)
+		{
+			animator.SetFloat("Moving", 0f);
 		}
 	}
 
