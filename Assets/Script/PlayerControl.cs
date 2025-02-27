@@ -12,6 +12,10 @@ public class PlayerControl : MonoBehaviour
 	public float speed = 5f;
 	private bool facingRight = true;
 
+	public Transform attackPoint;
+	public float attackRadius = 1f;
+	public LayerMask attackLayer;
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
@@ -37,6 +41,7 @@ public class PlayerControl : MonoBehaviour
 		{
 			Jump();
 			isGround = false;
+			animator.SetBool("Jumping", true);
 		}
 
 		if (Mathf.Abs(movement) > 0.1f)
@@ -46,6 +51,13 @@ public class PlayerControl : MonoBehaviour
 		else if (movement < 0.1f)
 		{
 			animator.SetFloat("Moving", 0f);
+		}
+
+		if (Input.GetKeyDown(KeyCode.J))
+		{			
+			animator.SetTrigger("Attacking");
+			Attack();
+			Debug.Log("Swings axe");
 		}
 	}
 
@@ -59,11 +71,36 @@ public class PlayerControl : MonoBehaviour
 		rb.AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
 	}
 
+	void Attack()
+	{
+		if (attackPoint == null)
+		{
+			Debug.LogError("Attack Point is not assigned!");
+			return;
+		}
+
+		Collider2D collInfo = Physics2D.OverlapCircle(attackPoint.position, attackRadius, attackLayer);
+		if (collInfo != null) // Fixing incorrect condition
+		{
+			Debug.Log(collInfo.gameObject.name + " takes damage");
+		}
+	}
+
+	private void OnDrawGizmosSelected()
+	{
+		if(attackPoint == null)
+		{
+			return;
+		}
+		Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+	}
+
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Ground")
 		{
 			isGround = true;
+			animator.SetBool("Jumping", false);
 		}
 	}
 }

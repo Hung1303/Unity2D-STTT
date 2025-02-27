@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30430fae13e7bfb4ca4655439a8f8edb
+guid: e1d54312db6913649ad808d30c346c69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8793639957104055765
-    second: idle_0
+      213: 5643105755533236068
+    second: skill2_3_#107224_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: skill2_3_#107224_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 365
-        height: 574
+        x: 0
+        y: 0
+        width: 595
+        height: 399
       alignment: 9
-      pivot: {x: 0.27691543, y: 0.35897863}
+      pivot: {x: 0.7349035, y: 0.14544}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d55ed543f8490a70800000000000000
-      internalID: 8793639957104055765
+      spriteID: 467558449c6505e40800000000000000
+      internalID: 5643105755533236068
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e1111d2a488b9346aaa634ed4225aea
+    spriteID: 2e7927f6d68291f448b5625692f3a914
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      idle_0: 8793639957104055765
+      skill2_3_#107224_0: 5643105755533236068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

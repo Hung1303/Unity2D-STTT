@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30430fae13e7bfb4ca4655439a8f8edb
+guid: b04e9f8b866c7504bbd316bb24d611cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8793639957104055765
-    second: idle_0
+      213: -7676814519588087682
+    second: skill2_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: skill2_1_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 365
-        height: 574
+        x: 0
+        y: 0
+        width: 589
+        height: 398
       alignment: 9
-      pivot: {x: 0.27691543, y: 0.35897863}
+      pivot: {x: 0.6063082, y: 0.13249753}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d55ed543f8490a70800000000000000
-      internalID: 8793639957104055765
+      spriteID: e7814613ed9767590800000000000000
+      internalID: -7676814519588087682
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e1111d2a488b9346aaa634ed4225aea
+    spriteID: 373ad11bf6b7c4743b8eb7e9a4176e59
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      idle_0: 8793639957104055765
+      skill2_1_0: -7676814519588087682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
